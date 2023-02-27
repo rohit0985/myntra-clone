@@ -137,7 +137,7 @@ const Products = () => {
 
       <VStack h={"100%"} w={"100%"} p={5}>
 
-      <SimpleGrid columns={[1, 2, 4]} spacing="45px">
+      <SimpleGrid columns={[1, 2, 3, 4]} spacing="45px">
   {
         new Array(50).fill(0).map((prod, idx)=>(
           <ProductCard/>

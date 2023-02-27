@@ -48,7 +48,7 @@ const FilterGrop = ({ filter, data }) => {
             <HStack>
               <Input
                 type="text"
-                placeholder={`more ${filter.toLowerCase()}`}
+                placeholder={`Search for ${filter.toLowerCase()}`}
                 h="30px"
                 outline={"none"}
                 _focus={{ bg: "gray.100" }}

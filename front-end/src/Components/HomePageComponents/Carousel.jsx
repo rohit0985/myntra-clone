@@ -66,6 +66,7 @@ const Carousel = () => {
       // p={10}
       alignItems="center"
       justifyContent="center"
+      mb={"80px"}
     >
       <Flex w="full" overflow="hidden">
         <Flex pos="relative" h="400px" w="full" {...carouselStyle}>

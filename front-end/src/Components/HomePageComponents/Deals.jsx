@@ -9,7 +9,7 @@ const Deals = () => {
    gap={8}
    m={'50px 0px'}
     >
-      <Heading pl={10} >DEAL OF THE DAY</Heading>
+      <Heading pl={10} fontWeight={500} fontSize={'3xl'}>DEAL OF THE DAY</Heading>
 
       <Box>
         <SimpleGrid columns={DEAL_OF_THE_DAY.length} spacing="0px">

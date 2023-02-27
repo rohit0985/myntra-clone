@@ -43,7 +43,8 @@ export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box>
+    <Box 
+    >
       <Flex
         bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
@@ -74,6 +75,7 @@ export default function WithSubnavigation() {
 
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
           <Image
+          cursor={'pointer'}
             w="60px"
             h="60px"
             src="https://aartisto.com/wp-content/uploads/2020/11/myntra.png"
@@ -96,8 +98,8 @@ export default function WithSubnavigation() {
             />
             <Input
               focusBorderColor="pink.400"
-              type="tel"
-              placeholder="Phone number"
+              type="text"
+              placeholder="Search your product..."
             />
           </InputGroup>
         </Flex>
@@ -108,19 +110,19 @@ export default function WithSubnavigation() {
           direction={"row"}
           spacing={6}
         >
-          <VStack>
+          <VStack  cursor={'pointer'}>
             <SlUser color="black" />
             <Text fontSize={12} fontWeight={"bold"} color={"black"}>
               Profile
             </Text>
           </VStack>
-          <VStack>
+          <VStack cursor={'pointer'}>
             <BsHeart color="black" />
             <Text fontSize={12} fontWeight={"bold"} color={"black"}>
               Wishlist
             </Text>
           </VStack>
-          <VStack>
+          <VStack cursor={'pointer'}>
             <BsHandbag color="black" />
             <Text fontSize={12} fontWeight={"bold"} color={"black"}>
               Bag
@@ -186,10 +188,10 @@ const DesktopNav = () => {
                 minW={"sm"}
                 w={"100%"}
                 position={'relative'}
-                matchWidth
+              
                 left={"0px"}
               >
-                <Stack>{navItem.children.map((child) => child.subLabel)}</Stack>
+                <Stack>{navItem.children.map((child, idx) => <div key={idx}>{child.subLabel}</div> )}</Stack>
               </PopoverContent>
             )}
           </Popover>

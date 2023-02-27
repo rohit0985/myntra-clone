@@ -9,14 +9,14 @@ const CategoriesOfBag = () => {
    gap={8}
    m={'50px 0px'}
     >
-      <Heading pl={10} >DEAL OF THE DAY</Heading>
+      <Heading pl={10} fontWeight={500} fontSize={'3xl'} >DEAL OF THE DAY</Heading>
 
       <Box>
         <SimpleGrid columns={CATEGORIES_TO_BAG.length/3} spacing="0px">
           {CATEGORIES_TO_BAG.map((deal, idx) => (
-            <Box>
-              <Image src={deal.image} />
-            </Box>
+            <Box key={idx}>
+                  <Image src={deal.image} cursor={'pointer'} />
+                </Box>
           ))}
         </SimpleGrid>
       </Box>

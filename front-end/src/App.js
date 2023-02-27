@@ -2,17 +2,18 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import ProductCard from './Components/ProductCard';
-import Carauser from './Components/HomePageComponents/Carousel';
-import Deals from './Components/HomePageComponents/Deals';
-import BestOfMyntra from './Components/HomePageComponents/BestOfMyntra';
+
+import HomePage from './Pages/HomePage';
+import ProductsPage from './Pages/ProductsPage';
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
-     <Carauser/>
-     <Deals/>
-     <BestOfMyntra/>
+      {/* <ProductCard/>
+      <br /> */}
+  {/* <HomePage/> */}
+  <ProductsPage/>
     </div>
   );
 }

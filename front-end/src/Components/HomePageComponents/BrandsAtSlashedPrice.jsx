@@ -9,14 +9,14 @@ const BrandsAtSlashedPrice = () => {
    gap={8}
    m={'50px 0px'}
     >
-      <Heading pl={10} >BRANDS AT SLASHED PRICES</Heading>
+      <Heading pl={10} fontWeight={500} fontSize={'3xl'} >BRANDS AT SLASHED PRICES</Heading>
 
       <Box>
         <SimpleGrid columns={BRANDS_AT_SLASHED_PRICES.length/2} spacing="0px">
           {BRANDS_AT_SLASHED_PRICES.map((deal, idx) => (
-            <Box>
-              <Image src={deal.image} />
-            </Box>
+            <Box key={idx}>
+                  <Image src={deal.image} cursor={'pointer'} />
+                </Box>
           ))}
         </SimpleGrid>
       </Box>

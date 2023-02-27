@@ -19,8 +19,8 @@ const ProductCard = () => {
     onMouseEnter={()=> setHover(true)}
     onMouseLeave={()=> setHover(false)}
     gap={"0px"}
-    boxShadow= {`rgba(149, 157, 165, 0.2) 0px 8px 24px`}
-    _hover={{cursor:'pointer'}}
+    
+    _hover={{cursor:'pointer', boxShadow: `rgba(149, 157, 165, 0.2) 0px 8px 24px`}}
     >
       <VStack position={"relative"}>
         <Image
@@ -81,12 +81,12 @@ const ProductCard = () => {
         transitionDuration={"1s"}
         >
           <HStack
-          ring={'1px'}
             alignItems={"center"}
             justifyContent={"center"}
             w={"90%"}
             h={8}
-            ringColor={"gray.300"}
+            border="1px solid"
+            borderColor={'gray.300'}
             p={2}
             margin={'auto'}
             borderRadius={'sm'}

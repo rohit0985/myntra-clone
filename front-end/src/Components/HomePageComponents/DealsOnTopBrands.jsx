@@ -9,14 +9,14 @@ const DealsOnTopBrands = () => {
    gap={8}
    m={'50px 0px'}
     >
-      <Heading pl={10} >DEAL OF THE DAY</Heading>
+      <Heading pl={10} fontWeight={500} fontSize={'3xl'} >DEAL OF THE DAY</Heading>
 
       <Box>
         <SimpleGrid columns={DEALS_ON_TOP_BRANDS.length/3} spacing="0px">
           {DEALS_ON_TOP_BRANDS.map((deal, idx) => (
-            <Box>
-              <Image src={deal.image} />
-            </Box>
+            <Box key={idx}>
+                  <Image src={deal.image} cursor={'pointer'} />
+                </Box>
           ))}
         </SimpleGrid>
       </Box>

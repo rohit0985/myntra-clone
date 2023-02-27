@@ -14,9 +14,9 @@ const Deals = () => {
       <Box>
         <SimpleGrid columns={DEAL_OF_THE_DAY.length} spacing="0px">
           {DEAL_OF_THE_DAY.map((deal, idx) => (
-            <Box>
-              <Image src={deal.image} />
-            </Box>
+            <Box key={idx}>
+                  <Image src={deal.image} cursor={'pointer'} />
+                </Box>
           ))}
         </SimpleGrid>
       </Box>

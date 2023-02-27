@@ -9,13 +9,13 @@ import { Box, calc, Flex, Heading, Image, SimpleGrid, VStack } from "@chakra-ui/
        gap={8}
        m={'50px 0px'}
         >
-          <Heading pl={10} >UNMISSABLE THIS SEASON</Heading>
+          <Heading pl={10} fontWeight={500} fontSize={'3xl'} >UNMISSABLE THIS SEASON</Heading>
     
           <Box>
             <SimpleGrid columns={UNMISSABLE_THIS_SEASON.length} spacing="0px">
               {UNMISSABLE_THIS_SEASON.map((deal, idx) => (
-                <Box>
-                  <Image src={deal.image} />
+                <Box key={idx}>
+                  <Image src={deal.image} cursor={'pointer'} />
                 </Box>
               ))}
             </SimpleGrid>

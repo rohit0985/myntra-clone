@@ -9,14 +9,14 @@ const BestOfMyntra = () => {
    gap={8}
    m={'50px 0px'}
     >
-      <Heading pl={10} >BEST OF MYNTRA EXCLUSIVE BRANDS</Heading>
+      <Heading pl={10} fontWeight={500} fontSize={'3xl'} >BEST OF MYNTRA EXCLUSIVE BRANDS</Heading>
 
       <Box>
         <SimpleGrid columns={BEST_OF_MYNTRA_EXCLUSIVE_BRANDS.length/2} spacing="0px">
           {BEST_OF_MYNTRA_EXCLUSIVE_BRANDS.map((deal, idx) => (
-            <Box>
-              <Image src={deal.image} />
-            </Box>
+            <Box key={idx}>
+                  <Image src={deal.image} cursor={'pointer'} />
+                </Box>
           ))}
         </SimpleGrid>
       </Box>

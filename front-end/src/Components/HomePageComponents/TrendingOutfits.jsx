@@ -9,13 +9,13 @@
        gap={8}
        m={'50px 0px'}
         >
-          <Heading pl={10} >TRENDING OUTFITS BY INFLUENCERS</Heading>
+          <Heading pl={10} fontWeight={500} fontSize={'3xl'} >TRENDING OUTFITS BY INFLUENCERS</Heading>
     
           <Box>
             <SimpleGrid columns={TRENDING_OUTFITS_BY_INFLUENCERS.length} spacing="0px">
               {TRENDING_OUTFITS_BY_INFLUENCERS.map((deal, idx) => (
-                <Box>
-                  <Image src={deal.image} />
+                <Box key={idx}>
+                  <Image src={deal.image} cursor={'pointer'} />
                 </Box>
               ))}
             </SimpleGrid>

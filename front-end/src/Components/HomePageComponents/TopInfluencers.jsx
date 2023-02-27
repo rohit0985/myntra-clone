@@ -9,14 +9,14 @@ import { Box, calc, Flex, Heading, Image, SimpleGrid, VStack } from "@chakra-ui/
      gap={8}
      m={'50px 0px'}
       >
-        <Heading pl={10} >TOP INFLUENCERS EXCLUSIVE STYLES</Heading>
+        <Heading pl={10} fontWeight={500} fontSize={'3xl'} >TOP INFLUENCERS EXCLUSIVE STYLES</Heading>
   
         <Box>
           <SimpleGrid columns={TOP_INFLUENCERS_EXCLUSIVE_STYLES.length} spacing="0px">
             {TOP_INFLUENCERS_EXCLUSIVE_STYLES.map((deal, idx) => (
-              <Box>
-                <Image src={deal.image} />
-              </Box>
+              <Box key={idx}>
+                  <Image src={deal.image} cursor={'pointer'} />
+                </Box>
             ))}
           </SimpleGrid>
         </Box>

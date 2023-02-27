@@ -9,14 +9,14 @@ import { Box, calc, Flex, Heading, Image, SimpleGrid, VStack } from "@chakra-ui/
        gap={8}
        m={'50px 0px'}
         >
-          <Heading pl={10} >BEST BUYS</Heading>
+          <Heading pl={10} fontWeight={500} fontSize={'3xl'} >BEST BUYS</Heading>
     
          <Box>
          <Box>
             <SimpleGrid columns={GIFTING_CARDS_1.length} spacing="0px">
               {GIFTING_CARDS_1.map((deal, idx) => (
-                <Box>
-                  <Image src={deal.image} />
+                <Box key={idx}>
+                  <Image src={deal.image} cursor={'pointer'} />
                 </Box>
               ))}
             </SimpleGrid>
@@ -25,8 +25,8 @@ import { Box, calc, Flex, Heading, Image, SimpleGrid, VStack } from "@chakra-ui/
           <Box>
             <SimpleGrid columns={GIFTING_CARDS_2.length} spacing="0px">
               {GIFTING_CARDS_2.map((deal, idx) => (
-                <Box>
-                  <Image src={deal.image} />
+                <Box key={idx}>
+                  <Image src={deal.image} cursor={'pointer'} />
                 </Box>
               ))}
             </SimpleGrid>

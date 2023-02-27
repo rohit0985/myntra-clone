@@ -9,14 +9,14 @@ const TopPicks = () => {
    gap={8}
    m={'50px 0px'}
     >
-      <Heading pl={10} >TOP PICKS</Heading>
+      <Heading pl={10} fontWeight={500} fontSize={'3xl'} >TOP PICKS</Heading>
 
       <Box>
         <SimpleGrid columns={TOP_PICKS.length} spacing="0px">
           {TOP_PICKS.map((deal, idx) => (
-            <Box>
-              <Image src={deal.image} />
-            </Box>
+            <Box key={idx}>
+                  <Image src={deal.image} cursor={'pointer'} />
+                </Box>
           ))}
         </SimpleGrid>
       </Box>

@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar/Navbar';
 import ProductCard from './Components/ProductCard';
 import Carauser from './Components/HomePageComponents/Carousel';
 import Deals from './Components/HomePageComponents/Deals';
+import BestOfMyntra from './Components/HomePageComponents/BestOfMyntra';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar/>
      <Carauser/>
      <Deals/>
+     <BestOfMyntra/>
     </div>
   );
 }

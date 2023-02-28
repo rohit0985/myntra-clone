@@ -6,6 +6,7 @@ import ProductCard from './Components/ProductCard';
 import HomePage from './Pages/HomePage';
 import ProductsPage from './Pages/ProductsPage';
 import MenPage from './Pages/MenPage';
+import WomenPage from './Pages/WomenPage';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <br /> */}
   {/* <HomePage/> */}
   {/* <ProductsPage/> */}
-  <MenPage/>
+  {/* <MenPage/> */}
+  <WomenPage/>
     </div>
   );
 }

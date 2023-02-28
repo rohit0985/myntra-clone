@@ -1,5 +1,5 @@
 import React from 'react'
-import Carousel from "../Components/HomePageComponents/Carousel"
+import Home_Carousel from "../Components/HomePageComponents/Home_Carousel"
 import Deals from "../Components/HomePageComponents/Deals"
 import BestOfMyntra from "../Components/HomePageComponents/BestOfMyntra"
 import TopPicks from "../Components/HomePageComponents/TopPicks"
@@ -26,7 +26,7 @@ import TrendingOutfits from '../Components/HomePageComponents/TrendingOutfits'
 const HomePage = () => {
   return (
     <>
-     <Carousel/>
+     <Home_Carousel/>
      <Deals/>
      <BestOfMyntra/>
      <TopPicks/>

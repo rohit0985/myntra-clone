@@ -140,7 +140,7 @@ const Products = () => {
       <SimpleGrid columns={[1, 2, 3, 4]} spacing="45px">
   {
         new Array(50).fill(0).map((prod, idx)=>(
-          <ProductCard/>
+          <ProductCard key={idx}/>
         ))
        }
   

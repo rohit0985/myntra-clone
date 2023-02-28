@@ -1,8 +1,10 @@
 import { Box, Flex, Text, Image } from '@chakra-ui/react';
 import React,{useState, useEffect} from 'react'
+import Carousel from '../Carousel';
 
-const Carousel = () => {
-  const slides = [
+const Home_Carousel = () => {
+
+  const data = [
     {
       img: "https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2023/2/26/ff119c09-50c5-48ba-8e52-4dd99651580c1677429259394-PB_DK_Sale-Starts-In-Few-Hours.jpg",
     },
@@ -33,67 +35,14 @@ const Carousel = () => {
     {
       img: "https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/6/27/53b4daed-cd2c-4111-86c5-14f737eceb351656325318973-Handbags_Desk.jpg",
     }, 
-  ];
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const slidesCount = slides.length;
-  const carouselStyle = {
-    transition: "all .5s",
-    ml: `-${currentSlide * 100}%`,
-  };
-  const SLIDES_INTERVAL_TIME = 5000;
-  const ANIMATION_DIRECTION = "right";
-  useEffect(() => {
-    const prevSlide = () => {
-      setCurrentSlide((s) => (s === 0 ? slidesCount - 1 : s - 1));
-    };
+  ]
 
-    const nextSlide = () => {
-      setCurrentSlide((s) => (s === slidesCount - 1 ? 0 : s + 1));
-    };
-
-    const automatedSlide = setInterval(() => {
-      ANIMATION_DIRECTION.toLowerCase() === "left" ? prevSlide() : nextSlide();
-    }, SLIDES_INTERVAL_TIME);
-    return () => clearInterval(automatedSlide);
-  }, [slidesCount]);
   return (
-    <Flex
-      w="full"
-      bg="#edf3f8"
-      _dark={{
-        bg: "#3e3e3e",
-      }}
-      // p={10}
-      alignItems="center"
-      justifyContent="center"
-      mb={"80px"}
-    >
-      <Flex w="full" overflow="hidden">
-        <Flex pos="relative" h="400px" w="full" {...carouselStyle}>
-          {slides.map((slide, sid) => (
-            <Box key={`slide-${sid}`} flex="none" boxSize="full" shadow="md">
-              <Text
-                color="white"
-                fontSize="xs"
-                p="8px 12px"
-                pos="absolute"
-                top="0"
-                whiteSpace="nowrap"
-              >
-                {/* {sid + 1} / {slidesCount} */}
-              </Text>
-              <Image
-                src={slide.img}
-                alt="carousel image"
-                boxSize="full"
-                backgroundSize="cover"
-              />
-            </Box>
-          ))}
-        </Flex>
-      </Flex>
-    </Flex>
-  );
+    <>
+      <Carousel slides={data}/>
+    </>
+  )
 };
 
-export default Carousel
+export default Home_Carousel
+

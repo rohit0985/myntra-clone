@@ -7,17 +7,21 @@ import HomePage from './Pages/HomePage';
 import ProductsPage from './Pages/ProductsPage';
 import MenPage from './Pages/MenPage';
 import WomenPage from './Pages/WomenPage';
+import LoginOrSignup from './Components/LoginOrSignup';
 
 function App() {
+
   return (
     <div className="App">
       <Navbar/>
-      {/* <ProductCard/>
-      <br /> */}
+      {/* <ProductCard/> */}
+      {/* <br /> */}
+      
   {/* <HomePage/> */}
   {/* <ProductsPage/> */}
   {/* <MenPage/> */}
-  <WomenPage/>
+  {/* <WomenPage/> */}
+  <LoginOrSignup/>
     </div>
   );
 }

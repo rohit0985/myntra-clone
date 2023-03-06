@@ -8,6 +8,8 @@ import ProductsPage from './Pages/ProductsPage';
 import MenPage from './Pages/MenPage';
 import WomenPage from './Pages/WomenPage';
 import LoginOrSignup from './Components/LoginOrSignup';
+import ProductDetails from './Pages/ProductDetails';
+import ImageMagnify from './Components/ImageMagnify';
 
 function App() {
 
@@ -21,7 +23,9 @@ function App() {
   {/* <ProductsPage/> */}
   {/* <MenPage/> */}
   {/* <WomenPage/> */}
-  <LoginOrSignup/>
+  {/* <LoginOrSignup/> */}
+  <ProductDetails/>
+  {/* <ImageMagnify/> */}
     </div>
   );
 }

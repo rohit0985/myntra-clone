@@ -1,12 +1,12 @@
 import { Box } from '@chakra-ui/react'
 import React from 'react'
 
-const OptVarification = () => {
+const CartRight = () => {
   return (
-    <Box>
-      
+    <Box w="40%">
+      right
     </Box>
   )
 }
 
-export default OptVarification
+export default CartRight

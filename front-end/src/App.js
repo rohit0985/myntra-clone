@@ -10,6 +10,9 @@ import WomenPage from './Pages/WomenPage';
 import LoginOrSignup from './Components/LoginOrSignup';
 import ProductDetails from './Pages/ProductDetails';
 import ImageMagnify from './Components/ImageMagnify';
+import OtpVarification from './Components/OtpVarification';
+import SignIn from './Components/SignIn';
+import CartPage from './Pages/CartPage';
 
 function App() {
 
@@ -20,12 +23,15 @@ function App() {
       {/* <br /> */}
       
   {/* <HomePage/> */}
-  <ProductsPage/>
+  {/* <ProductsPage/> */}
   {/* <MenPage/> */}
   {/* <WomenPage/> */}
   {/* <LoginOrSignup/> */}
   {/* <ProductDetails/> */}
   {/* <ImageMagnify/> */}
+  {/* <OtpVarification/> */}
+  {/* <SignIn/> */}
+  <CartPage/>
     </div>
   );
 }

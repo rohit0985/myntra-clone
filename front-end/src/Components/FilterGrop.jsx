@@ -23,6 +23,11 @@ const FilterGrop = ({ filter, data }) => {
     setSeachResult(new_data)
   }
 
+  const handleSearchToggle = () => {
+    setSearchOption(!searchOption)
+    setSearchQuery("")
+  }
+
   return (
     <VStack
       p={"20px"}
@@ -64,6 +69,7 @@ const FilterGrop = ({ filter, data }) => {
                 focusBorderColor="gray.100"
                 value={searchQuery}
                 onChange={handleChange}
+                autoFocus
               />
               <Flex
                 h="25px"
@@ -75,7 +81,7 @@ const FilterGrop = ({ filter, data }) => {
                 fontSize={"12px"}
                 p={2}
                 cursor={"pointer"}
-                onClick={() => setSearchOption(!searchOption)}
+                onClick={handleSearchToggle}
               >
                 <CloseIcon color={'gray.400'}/>
               </Flex>

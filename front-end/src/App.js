@@ -20,11 +20,11 @@ function App() {
       {/* <br /> */}
       
   {/* <HomePage/> */}
-  {/* <ProductsPage/> */}
+  <ProductsPage/>
   {/* <MenPage/> */}
   {/* <WomenPage/> */}
   {/* <LoginOrSignup/> */}
-  <ProductDetails/>
+  {/* <ProductDetails/> */}
   {/* <ImageMagnify/> */}
     </div>
   );

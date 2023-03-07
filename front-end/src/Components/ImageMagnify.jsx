@@ -5,7 +5,7 @@ import ReactImageMagnify from 'react-image-magnify';
 const ImageMagnify = ({image_src}) => {
    
   return (
-    <Box w='300px' h='350px' zIndex={2}>
+    <Box w='300px' h='350px' zIndex={1}>
       <ReactImageMagnify {...{
     smallImage: {
         alt: 'Wristwatch by Ted Baker London',

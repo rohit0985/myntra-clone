@@ -25,7 +25,7 @@ import SimilarProducts from "../Components/ProductDetailsPageComponents/SimilarP
 const ProductDetails = () => {
   return (
     <>
-      <VStack w="100vw" h="100vh" alignItems="flex-start">
+      <VStack w="100vw" alignItems="flex-start">
         <Text color="gray.800" fontSize="14px" m="30px 0px" ml="50px">
           Home / Clothing / Men Clothing / Tshirts /{" "}
           <chakra.span fontWeight="bold">
@@ -140,7 +140,7 @@ const ProductDetails = () => {
                     fontSize="16px"
                     borderRadius="3px"
                     cursor={"pointer"}
-                    zIndex={1}
+                    
                   >
                     <BsHandbagFill fontSize={"18px"} />{" "}
                     <chakra.span ml="10px">ADD TO BAG</chakra.span>
@@ -157,7 +157,7 @@ const ProductDetails = () => {
                     _hover={{borderColor: "gray.900", }}
                     fontSize="16px"
                     borderRadius="3px"
-                    zIndex={1}
+                   
                   >
                     <BsHeart fontSize={"18px"} />{" "}
                     <chakra.span ml="10px" color="gray.800">

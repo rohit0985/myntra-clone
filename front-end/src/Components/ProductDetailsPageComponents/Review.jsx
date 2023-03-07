@@ -27,7 +27,7 @@ const Review = ({el}) => {
         </Text>
         <HStack>
           {el.images?.length > 0 &&
-            el.images.map((image, idx) => <Image src={image} w="50px" key={idx} />)}
+            el.images.map((image, idx) =>idx<5 ? <Image src={image} w="50px" key={idx} /> : null)}
             {el.images.length>5 ? <Text textDecoration="underline" cursor="pointer">+ {el.images.length - 5} more images</Text> : null}
 
         </HStack>

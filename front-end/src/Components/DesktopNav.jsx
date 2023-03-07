@@ -43,7 +43,8 @@ export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box 
+    <Box
+   
     >
       <Flex
         bg={useColorModeValue("white", "gray.800")}
@@ -57,6 +58,7 @@ export default function WithSubnavigation() {
         borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
         justify={"space-between"}
+        
       >
         <Flex
           flex={{ base: 1, md: "auto" }}

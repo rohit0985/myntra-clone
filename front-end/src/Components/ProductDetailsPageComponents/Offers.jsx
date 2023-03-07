@@ -14,7 +14,7 @@ const Offers = () => {
       <UnorderedList listStyleType={"initial"} textAlign="left" mt="7px" mb="7px">
   <ListItem>Applicable on: Orders above Rs. 899 (only on first purchase)
 </ListItem>
-  <ListItem>Coupon code: MYNTRA200
+  <ListItem>Coupon code: <chakra.span fontWeight={500}>MYNTRA200</chakra.span>
 </ListItem>
   <ListItem>Coupon Discount: Rs. 66 off (check cart for final savings)</ListItem>
 </UnorderedList>

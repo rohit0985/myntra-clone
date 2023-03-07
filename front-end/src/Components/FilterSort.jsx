@@ -19,7 +19,7 @@ const FilterSort = () => {
     const data = {
         category: [
           "Topwear",
-          "Indian& Festive Wear",
+          "Indian & Festive Wear",
           "Bottomwear",
           "Innerwear & Sleepwear",
           "Footwear",

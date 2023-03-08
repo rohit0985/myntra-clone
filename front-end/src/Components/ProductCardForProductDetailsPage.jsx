@@ -1,18 +1,16 @@
 import { HStack, Image, VStack, chakra, Text } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React from "react";
 import { AiFillStar } from "react-icons/ai";
-import { BsHeart } from "react-icons/bs";
 
-const ProductCard = () => {
-  const [hover, setHover] = useState(false);
+const ProductCardForProductDetailsPage = () => {
   return (
     <VStack
       width={200}
       align={"flex-start"}
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
       gap={"0px"}
       bg="white"
+      border="1px solid"
+      borderColor="gray.200"
       _hover={{
         cursor: "pointer",
         boxShadow: `rgba(149, 157, 165, 0.2) 0px 8px 24px`,
@@ -27,23 +25,19 @@ const ProductCard = () => {
         />
         <HStack
           background={"gray.200"}
-          padding={"0px 5px"}
+          padding={"0px 3px"}
           borderRadius={"sm"}
           align={"center"}
           justify={"center"}
           position={"absolute"}
           left={"7px"}
           bottom={"5px"}
-          display={hover ? "none" : "flex"}
+          spacing="0px"
         >
-          <chakra.span fontWeight={"bold"} fontSize="12px">
+          <chakra.span fontWeight={"bold"} fontSize="10px">
             4.1
           </chakra.span>
-          <AiFillStar color="teal" />
-          <chakra.span>|</chakra.span>
-          <chakra.span fontWeight={"bold"} fontSize="10px">
-            746
-          </chakra.span>
+          <AiFillStar color="teal" fontSize="12px" />
         </HStack>
       </VStack>
 
@@ -61,41 +55,6 @@ const ProductCard = () => {
             </Text>
             <Text fontSize={"14px"} color={"gray.500"}>
               Men Colorblocked Sandals
-            </Text>
-          </VStack>
-
-          <VStack
-            w={"100%"}
-            alignItems={"flex-start"}
-            position={"absolute"}
-            bottom={"0px"}
-            left={0}
-            pt={2}
-            background={"white"}
-            height={hover ? "60px" : "0px"}
-            display={!hover && "none"}
-            transition="ease"
-            transitionDuration={"1s"}
-          >
-            <HStack
-              alignItems={"center"}
-              justifyContent={"center"}
-              w={"90%"}
-              h={8}
-              border="1px solid"
-              borderColor={"gray.300"}
-              p={2}
-              margin={"auto"}
-              borderRadius={"sm"}
-              _hover={{ ringColor: "black" }}
-            >
-              <BsHeart size={12} />{" "}
-              <Text fontSize={12} fontWeight={"bold"}>
-                WISHLIST
-              </Text>
-            </HStack>
-            <Text p="0px" pl={3} fontSize={14} textAlign={"left"}>
-              Size: UK7
             </Text>
           </VStack>
         </VStack>
@@ -123,4 +82,4 @@ const ProductCard = () => {
   );
 };
 
-export default ProductCard;
+export default ProductCardForProductDetailsPage;

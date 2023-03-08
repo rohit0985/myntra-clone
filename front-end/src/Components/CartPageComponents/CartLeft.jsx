@@ -1,4 +1,4 @@
-import { Box } from '@chakra-ui/react'
+import { Box, VStack } from '@chakra-ui/react'
 import React from 'react'
 import AvailableOffers from './CartLeftComponents/AvailableOffers'
 import CartProducts from './CartLeftComponents/CartProducts'
@@ -7,12 +7,12 @@ import DeleveryCharge from './CartLeftComponents/DeleveryCharge'
 
 const CartLeft = () => {
   return (
-    <Box w="60%">
+    <VStack w="60%" alignItems="flex-start" gap="5px">
       <DeleveryAvailability/>
       <AvailableOffers/>
       <DeleveryCharge/>
       <CartProducts/>
-    </Box>
+    </VStack>
   )
 }
 

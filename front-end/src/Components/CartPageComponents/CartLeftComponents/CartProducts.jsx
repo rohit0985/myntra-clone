@@ -1,28 +1,46 @@
-import { Box, Checkbox, Flex, Text } from "@chakra-ui/react";
+import { Box, Checkbox, Flex, Text, VStack } from "@chakra-ui/react";
 import React from "react";
+import CartProductCard from "./CartProductCard";
 
 const CartProducts = () => {
   return (
-    <Box fontSize="14px">
-     
-      <Flex justifyContent="space-between"  border="1px solid"
-      borderColor="gray.200"
-      borderRadius="5px"
-      p="10px">
-        <Checkbox colorScheme="red" defaultChecked fontWeight={500} fontSize="16px">
+    <VStack fontSize="14px" w="100%" alignItems="flex-start" gap="10px">
+      <Flex
+        justifyContent="space-between"
+        p="10px"
+        w="100%"
+      >
+        <Checkbox
+          colorScheme="red"
+          defaultChecked
+          fontWeight={500}
+          fontSize="16px"
+        >
           2/2 ITEMS SELECTED
         </Checkbox>
         <Flex>
-          <Text fontWeight={500} color="gray.500" >REMOVE</Text>
-          <Box h="100%" borderRight="1px solid" borderColor="gray.300" pl="20px" mr="20px"/>
-          <Text fontWeight={500} color="gray.500" >MOVE TO WISHLIST</Text>
+          <Text fontWeight={500} color="gray.500">
+            REMOVE
+          </Text>
+          <Box
+            h="100%"
+            borderRight="1px solid"
+            borderColor="gray.300"
+            pl="20px"
+            mr="20px"
+          />
+          <Text fontWeight={500} color="gray.500">
+            MOVE TO WISHLIST
+          </Text>
         </Flex>
       </Flex>
 
-
-
-
-    </Box>
+      <VStack w="100%" alignItems="flex-start">
+        {[1, 2, 3, 4, 5].map((el, idx) => (
+          <CartProductCard />
+        ))}
+      </VStack>
+    </VStack>
   );
 };
 

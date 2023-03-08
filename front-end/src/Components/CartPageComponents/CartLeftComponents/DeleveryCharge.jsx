@@ -4,7 +4,7 @@ import React from 'react'
 
 const DeleveryCharge = () => {
   return (
-    <Flex fontSize="14px" alignItems="center" gap="5px" border="1px solid"
+    <Flex w="100%" fontSize="14px" alignItems="center" gap="5px" border="1px solid"
     borderColor="gray.200"
     borderRadius="5px"
     p="10px">

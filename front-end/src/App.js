@@ -20,8 +20,7 @@ function App() {
     <div className="App">
       <Navbar/>
       {/* <ProductCard/> */}
-      {/* <br /> */}
-      
+      <br />
   {/* <HomePage/> */}
   {/* <ProductsPage/> */}
   {/* <MenPage/> */}
@@ -31,6 +30,8 @@ function App() {
   {/* <ImageMagnify/> */}
   {/* <OtpVarification/> */}
   {/* <SignIn/> */}
+
+
   <CartPage/>
     </div>
   );

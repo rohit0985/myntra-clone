@@ -18,7 +18,7 @@ const SupportSociety = () => {
 <VStack alignItems='flex-start' gap="10px">
         <Checkbox
           size="md"
-          colorScheme="orange"
+          colorScheme="pink"
           defaultChecked
           fontWeight="bold"
         >

@@ -26,14 +26,16 @@ const CartProductCard = () => {
     >
       <Box position="relative">
         <Checkbox
-          colorScheme="red"
+          colorScheme="pink"
+          // background='#ff3f6c'
+          // accent-color= "red"
           defaultChecked
           position="absolute"
           top="5px"
           left="5px"
         ></Checkbox>
         <Image
-          w="120px"
+          w="140px"
           src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/1700871/2020/1/22/f932ae44-0fb8-4b92-b7bc-f1756253294b1579692118186-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-1.jpg"
         />
       </Box>
@@ -44,7 +46,7 @@ const CartProductCard = () => {
         position="relative"
         w="100%"
       >
-        <CloseIcon position="absolute" top="5px" right="5px" cursor="pointer" />
+        <CloseIcon position="absolute" top="5px" right="5px" cursor="pointer" fontWeight="normal" color="gray.700" fontSize="12px" />
         <Box textAlign="left">
           <Heading size="sm">HRX by Hrithik Roshan</Heading>
           <Text>Men Teal Blue Printed Pure Cotton T-shirt</Text>

@@ -92,9 +92,10 @@ const FilterGrop = ({ filter, data }) => {
           alignItems={"flex-start"}
           justifyContent={"flex-start"}
           spacing="2px"
+         w="100%"
         >
           {(searchQuery ? searchResult : data).map((el, idx) => ( idx<5 && 
-            <Checkbox size="md" colorScheme="pink"  key={idx} color="blackAlpha.800">
+            <Checkbox size="md" colorScheme="pink"  key={idx} color="blackAlpha.800" w="100%" >
               <Text fontSize={'14px'}>{el}</Text>
             </Checkbox>
           ))}

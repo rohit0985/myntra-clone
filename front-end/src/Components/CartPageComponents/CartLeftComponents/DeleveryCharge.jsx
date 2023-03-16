@@ -1,4 +1,4 @@
-import { Flex, Text, chakra } from '@chakra-ui/react'
+import { Flex, Text, chakra, Image } from '@chakra-ui/react'
 import { BsTruck } from "react-icons/bs";
 import React from 'react'
 
@@ -8,7 +8,7 @@ const DeleveryCharge = () => {
     borderColor="gray.200"
     borderRadius="5px"
     p="10px">
-      <BsTruck fontSize="20px"/>
+      <Image h="25px"  src="https://constant.myntassets.com/checkout/assets/img/ship-free.webp" alt="truck"/>
       <Text>Yay! <chakra.span fontWeight={500}>No convenience fee</chakra.span> on this order </Text>
     </Flex>
   )

@@ -10,9 +10,11 @@ import WomenPage from './Pages/WomenPage';
 import LoginOrSignup from './Components/LoginOrSignup';
 import ProductDetails from './Pages/ProductDetails';
 import ImageMagnify from './Components/ImageMagnify';
-import OtpVarification from './Components/OtpVarification';
+import OtpVarification from './Components/OtpVerification';
 import SignIn from './Components/SignIn';
 import CartPage from './Pages/CartPage';
+import PasswordVerify from './Components/PasswordVerify';
+import Signup from './Components/Signup';
 
 function App() {
 
@@ -20,7 +22,7 @@ function App() {
     <div className="App">
       <Navbar/>
       {/* <ProductCard/> */}
-      <br />
+      {/* <br /> */}
   {/* <HomePage/> */}
   {/* <ProductsPage/> */}
   {/* <MenPage/> */}
@@ -28,11 +30,13 @@ function App() {
   {/* <LoginOrSignup/> */}
   {/* <ProductDetails/> */}
   {/* <ImageMagnify/> */}
-  {/* <OtpVarification/> */}
+  <OtpVarification/>
   {/* <SignIn/> */}
+  {/* <PasswordVerify/> */}
+  {/* <Signup/> */}
 
 
-  <CartPage/>
+  {/* <CartPage/> */}
     </div>
   );
 }

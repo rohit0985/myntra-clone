@@ -11,7 +11,7 @@ const CartProducts = () => {
         w="100%"
       >
         <Checkbox
-          colorScheme="red"
+          colorScheme="pink"
           defaultChecked
           fontWeight={500}
           fontSize="16px"

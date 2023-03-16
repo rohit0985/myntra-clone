@@ -8,6 +8,7 @@ import TrendingInIndian from '../Components/MenPageComponents/TrendingInIndian'
 import TrendingInSports from '../Components/MenPageComponents/TrendingInSports'
 import CategoriesToBag from '../Components/MenPageComponents/CategoriesToBag'
 import Men_Carousel from '../Components/MenPageComponents/Men_Carousel'
+import { Box } from '@chakra-ui/react'
 const MenPage = () => {
   return (
     <>

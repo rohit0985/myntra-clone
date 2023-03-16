@@ -27,18 +27,20 @@ const Carousel = ({slides}) => {
   }, [slidesCount]);
   return (
     <Flex
+    mt='50px'
+    h="300px"
       w="full"
       bg="#edf3f8"
       _dark={{
         bg: "#3e3e3e",
       }}
-      // p={10}
       alignItems="center"
       justifyContent="center"
-      mb={"80px"}
+      mb={"100px"}
+      
     >
       <Flex w="full" overflow="hidden">
-        <Flex pos="relative" h="400px" w="full" {...carouselStyle}>
+        <Flex pos="relative" h="100%" w="full" {...carouselStyle}>
           {slides.map((slide, sid) => (
             <Box key={`slide-${sid}`} flex="none" boxSize="full" shadow="md">
               <Text
@@ -56,6 +58,7 @@ const Carousel = ({slides}) => {
                 alt="carousel image"
                 boxSize="full"
                 backgroundSize="cover"
+                h="100%"
               />
             </Box>
           ))}

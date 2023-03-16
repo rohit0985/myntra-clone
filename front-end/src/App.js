@@ -15,6 +15,7 @@ import SignIn from './Components/SignIn';
 import CartPage from './Pages/CartPage';
 import PasswordVerify from './Components/PasswordVerify';
 import Signup from './Components/Signup';
+import KidsPage from './Pages/KidsPage';
 
 function App() {
 
@@ -30,11 +31,11 @@ function App() {
   {/* <LoginOrSignup/> */}
   {/* <ProductDetails/> */}
   {/* <ImageMagnify/> */}
-  <OtpVarification/>
+  {/* <OtpVarification/> */}
   {/* <SignIn/> */}
   {/* <PasswordVerify/> */}
   {/* <Signup/> */}
-
+<KidsPage/>
 
   {/* <CartPage/> */}
     </div>

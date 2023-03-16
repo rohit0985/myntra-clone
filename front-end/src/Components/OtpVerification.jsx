@@ -67,6 +67,7 @@ const OtpVerification = () => {
               border="1px solid"
               borderColor="gray.300"
               borderRadius="2px"
+              caretColor="green"
               _focus={{ borderColor: "gray.900" }}
             />
             <PinInputField

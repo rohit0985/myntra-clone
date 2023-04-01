@@ -8,9 +8,11 @@ import TrendingInIndian from '../Components/WomenPageComponents/TrendingInIndian
 import TrendingInSports from '../Components/WomenPageComponents/TrendingInSports'
 import CategoriesToBag from '../Components/WomenPageComponents/CategoriesToBag'
 import Women_Carousel from '../Components/WomenPageComponents/Women_Carousel'
+import Navbar from '../Components/Navbar/Navbar'
 const WomenPage = () => {
   return (
     <>
+    {/* <Navbar/> */}
     <Women_Carousel/>
       <BiggestDeals/>
       <CategoriesToBag/>

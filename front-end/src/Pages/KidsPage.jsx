@@ -8,10 +8,12 @@ import KidsSpace from '../Components/KidsPageComponents/KidsSpace'
 import Kids_Carousel from '../Components/KidsPageComponents/Kids_Carousel'
 import MoreBrands from '../Components/KidsPageComponents/MoreBrands'
 import TopPicks from '../Components/KidsPageComponents/TopPicks'
+import Navbar from '../Components/Navbar/Navbar'
 
 const KidsPage = () => {
   return (
     <>
+    {/* <Navbar/> */}
       <Kids_Carousel/>
       <FavoritBrands/>
       <TopPicks/>

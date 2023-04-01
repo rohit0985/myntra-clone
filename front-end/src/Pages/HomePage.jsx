@@ -21,11 +21,13 @@ import ColorsOfSeason from '../Components/HomePageComponents/ColorsOfSeason'
 import TopInfluencers from '../Components/HomePageComponents/TopInfluencers'
 import BudgetPicks from '../Components/HomePageComponents/BudgetPicks'
 import TrendingOutfits from '../Components/HomePageComponents/TrendingOutfits'
+import Navbar from '../Components/Navbar/Navbar'
 
 
 const HomePage = () => {
   return (
     <>
+    {/* <Navbar/> */}
      <Home_Carousel/>
      <Deals/>
      <BestOfMyntra/>

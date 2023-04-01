@@ -121,6 +121,7 @@ const Innerwear = () => {
    <ListRender data={data}/>
   );
 };
+
 const FootWear = () => {
   const data = {
     category: "Footwear",

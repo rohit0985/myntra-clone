@@ -16,6 +16,7 @@ import CartPage from './Pages/CartPage';
 import PasswordVerify from './Components/PasswordVerify';
 import Signup from './Components/Signup';
 import KidsPage from './Pages/KidsPage';
+import AllRoutes from './Pages/AllRoutes';
 
 function App() {
 
@@ -25,7 +26,7 @@ function App() {
       {/* <ProductCard/> */}
       {/* <br /> */}
   {/* <HomePage/> */}
-  {/* <ProductsPage/> */}
+  <ProductsPage/>
   {/* <MenPage/> */}
   {/* <WomenPage/> */}
   {/* <LoginOrSignup/> */}
@@ -35,9 +36,10 @@ function App() {
   {/* <SignIn/> */}
   {/* <PasswordVerify/> */}
   {/* <Signup/> */}
-<KidsPage/>
+{/* <KidsPage/> */}
 
   {/* <CartPage/> */}
+  {/* <AllRoutes/> */}
     </div>
   );
 }

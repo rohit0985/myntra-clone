@@ -9,9 +9,11 @@ import TrendingInSports from '../Components/MenPageComponents/TrendingInSports'
 import CategoriesToBag from '../Components/MenPageComponents/CategoriesToBag'
 import Men_Carousel from '../Components/MenPageComponents/Men_Carousel'
 import { Box } from '@chakra-ui/react'
+import Navbar from '../Components/Navbar/Navbar'
 const MenPage = () => {
   return (
     <>
+    {/* <Navbar/> */}
     <Men_Carousel/>
       <BiggestDeals/>
       <CategoriesToBag/>

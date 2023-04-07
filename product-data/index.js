@@ -12,7 +12,7 @@ for (let i = 0; i < parsedData.length; i++) {
   let obj = {
     image: el.i,
     brand: el.b,
-    color : "Pink",
+    color : "White",
     title: el.t,
     size: [],
     sellingPrice: + el.sp,
@@ -27,6 +27,7 @@ for (let i = 0; i < parsedData.length; i++) {
     obj.percentageDiscount = Number(y.join(""));
   }
 
+
   if (obj.faltDiscount) {
     let x = obj.faltDiscount.replace("(","").replace(")","").split(" ");
     obj.faltDiscount = Number(x[0]);
@@ -39,7 +40,6 @@ while(obj.size.length<4){
   let idx = Math.floor(Math.random()*7)
  
 if(!obj.size.includes(s[idx])) obj.size.push(s[idx])
-// obj.size = obj.size.sort((a,b)=> Number(a)-Number(b))
 obj.size = obj.size.sort((a,b)=> s.indexOf(a)-s.indexOf(b))
 }
 
@@ -47,10 +47,10 @@ obj.size = obj.size.sort((a,b)=> s.indexOf(a)-s.indexOf(b))
 
 
 
-obj.collections = "Women"
-obj.subCollection = "Fusion Wear"
-obj.gender = "Women"
-obj.category = "Jackets"
+obj.collections = "Men"
+obj.subCollection = "Topwear"
+obj.gender = "Men"
+obj.category = "T-Shirts"
   updated.push(obj);
 
 }

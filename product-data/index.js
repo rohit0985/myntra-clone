@@ -12,7 +12,7 @@ for (let i = 0; i < parsedData.length; i++) {
   let obj = {
     image: el.i,
     brand: el.b,
-    color : "White",
+    color : "Blue",
     title: el.t,
     size: [],
     sellingPrice: + el.sp,
@@ -47,10 +47,10 @@ obj.size = obj.size.sort((a,b)=> s.indexOf(a)-s.indexOf(b))
 
 
 
-obj.collections = "Men"
-obj.subCollection = "Topwear"
-obj.gender = "Men"
-obj.category = "T-Shirts"
+obj.collections = "Women"
+obj.subCollection = "Indian"
+obj.gender = "Women"
+obj.category = "Kurtas"
   updated.push(obj);
 
 }
